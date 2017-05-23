@@ -15,6 +15,9 @@
 		316232E11ED43F12003957B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 316232DF1ED43F12003957B8 /* LaunchScreen.storyboard */; };
 		316232EC1ED43F12003957B8 /* saveImageToPhotosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 316232EB1ED43F12003957B8 /* saveImageToPhotosTests.m */; };
 		316232F71ED43F12003957B8 /* saveImageToPhotosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 316232F61ED43F12003957B8 /* saveImageToPhotosUITests.m */; };
+		316233051ED43F29003957B8 /* showImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 316233041ED43F29003957B8 /* showImage.jpg */; };
+		316233081ED43FB9003957B8 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316233071ED43FB9003957B8 /* Photos.framework */; };
+		3162330A1ED43FC9003957B8 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316233091ED43FC9003957B8 /* AssetsLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		316232F21ED43F12003957B8 /* saveImageToPhotosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = saveImageToPhotosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		316232F61ED43F12003957B8 /* saveImageToPhotosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = saveImageToPhotosUITests.m; sourceTree = "<group>"; };
 		316232F81ED43F12003957B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		316233041ED43F29003957B8 /* showImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = showImage.jpg; sourceTree = "<group>"; };
+		316233071ED43FB9003957B8 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		316233091ED43FC9003957B8 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3162330A1ED43FC9003957B8 /* AssetsLibrary.framework in Frameworks */,
+				316233081ED43FB9003957B8 /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +93,7 @@
 				316232EA1ED43F12003957B8 /* saveImageToPhotosTests */,
 				316232F51ED43F12003957B8 /* saveImageToPhotosUITests */,
 				316232CF1ED43F12003957B8 /* Products */,
+				316233061ED43FB9003957B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +110,7 @@
 		316232D01ED43F12003957B8 /* saveImageToPhotos */ = {
 			isa = PBXGroup;
 			children = (
+				316233041ED43F29003957B8 /* showImage.jpg */,
 				316232D41ED43F12003957B8 /* AppDelegate.h */,
 				316232D51ED43F12003957B8 /* AppDelegate.m */,
 				316232D71ED43F12003957B8 /* ViewController.h */,
@@ -138,6 +148,15 @@
 				316232F81ED43F12003957B8 /* Info.plist */,
 			);
 			path = saveImageToPhotosUITests;
+			sourceTree = "<group>";
+		};
+		316233061ED43FB9003957B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				316233091ED43FC9003957B8 /* AssetsLibrary.framework */,
+				316233071ED43FB9003957B8 /* Photos.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				316233051ED43F29003957B8 /* showImage.jpg in Resources */,
 				316232E11ED43F12003957B8 /* LaunchScreen.storyboard in Resources */,
 				316232DE1ED43F12003957B8 /* Assets.xcassets in Resources */,
 				316232DC1ED43F12003957B8 /* Main.storyboard in Resources */,
@@ -371,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -414,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
